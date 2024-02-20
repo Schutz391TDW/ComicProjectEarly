@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #000;
+	color:#FFF;
+    font-family: Marvel;
+    text-align: center;
+
+}
+
+h1 {
+	background-color: #e23636;
+    font-weight: 1000;
+    font-size: 400%;
+    padding: 15px;
+    margin-bottom: 1px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 200%
+}
+
+footer {
+    display: block;
+    
+}
+
+table {
+    width: 100%;
+}
+
+a {
+    color: #FFF;
+}
+
+#regtable {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer {
+	background-color: #504a4a;
+    width:100%;
+    height: absolute;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    padding-left: 20%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+    font-size: 125%
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    background-color: #504a4a;
+    padding: 10px 75px;
+    text-decoration: none; 
+}
+
+.navbar li a:hover {
+    background-color: black;
+    font-style: italic;
+    color: #FFF;
+}
+
+.active {
+    color: #e23636;
+}
+
+.grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.comic {
+    position: relative;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+
+.comic, .back, .front {
+    height: 307px;
+    width: 200px;
+}
+
+.back, .front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+    background: #000 url("http://1.bp.blogspot.com/-iUpA-jdZsmQ/UYGydQFr5BI/AAAAAAAARIQ/A73A_WG4Mos/s1600/Spidey+Super+Stories+17+Back+Cover.jpg") no-repeat center center / contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #6589F9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+
+.match .front {
+    background: #000 !important;
+}
+
+
+.title {
+    font-size: 200%;
+}
+
+.button {
+    transition-duration: 0.4s;
+    border: 2px solid #e23636;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+    padding: 15px 32px;
+    font-family: Marvel;
+    font-weight: 1000;
+}
+
+.button:hover {
+    background-color: #e23636;
+    color: white;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    outline: none;
+}
